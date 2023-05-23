@@ -38,9 +38,6 @@ req_prog10 = requests.post(url.format(folder), json={"prog": "10% ||  Choose inp
 input_path = "/dbfs/mnt/"+folderPath+"/"+fileName
 df = pd.read_csv(input_path)
 
-#Remove rows which do not have an outcome value
-req_prog18 = requests.post(url.format(folder), json={"prog": "18% ||  Remove rows which do not have an outcome value"})
-
 #Assign to X and y
 req_prog26 = requests.post(url.format(folder), json={"prog": "26% ||  Assign to X and y"})
 X = df.copy()
