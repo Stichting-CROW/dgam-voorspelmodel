@@ -1,51 +1,12 @@
-# Specificatie
+# Datagedreven assetmanagement voorspelmodel 
+Ontwikkeld door het Big Data Innovatiehub van de Haagse Hogeschool, onder begeleiding van Dr. Raymond Hoogendoorn. 
 
-Dit is de GitHub-repository voor ...
+### Datalab
+Het datalab (ook wel Big Data Innovatiehub genoemd) brengt de kennis, vaardigheden, data en technologie samen om daadwerkelijk opdrachten te kunnen uitvoeren. Online is het nieuwe normaal geworden op veel verschillende levensterreinen – van werken en leren tot ontspannen. De verwachting is dat de digitale transformatie zich steeds verder zal voortzetten. Dit vraagt van ondernemers om zich aan te passen. Het optimaal gebruik van data is daarin een voorwaarde. Maar niet alle mkb’ers hebben de mogelijkheid of middelen om hun vraagstukken zelf op te lossen.
 
----
+### Werking van de web app en Azure omgeving
+Er kan worden ingelogd op een van de accounts voor de gemeenten. Op de pagina van de gemeente kunnen eerdere bestanden worden gedownload. Ook kan er worden gekozen om een nieuw bestand te uploaden. Dit bestand komt in onze Azure omgeving terecht. Via een data factory pipeline wordt dit bestand in onze databricks omgeving verwerkt. Met het getrainde model voegen we een voorspelling toe en wordt het nieuwe bestand onderaan beschikbaar om te downloaden.
+In het bestand hoeven niet alle kolommen te zitten waarop getraind is. Hoe meer hoe beter, in het vakje voor missing features is te zien welke kolommen niet in het bestand.
 
-## Instructies voor redacteurs
-
-1. **Werkversies**
-
-   Werkversies worden continu gepubliceerd op `https://docs.crow.nl/{{repository-korte-naam}}/{{document-korte-naam}} (logboek op [auto-publish]).
-
-2. **Referentieversies**
-
-   Bijvoorbeeld voor een review of consultatie; klik op [**Publiceer een bepaalde versie**](lifecycle) en vervolgens _Run workflow_.
-
-3. **Een nieuw document toevoegen**
-
-   Bijvoorbeeld voor een conceptueel model, API-beschrijving of uitwisselingsformaat; klik op [**Voeg een nieuw document toe**](add-doc) en kies _Run workflow_.
-
-4. **Publicatie op crow.nl**
-
-   Voor op de startpagina van _docs.crow.nl_: zie de [README van docs.crow.nl][publiceer-readme].
-   Voor op crow.nl of de kennisbank: mail.
-
-5. **Werken met ReSpec**
-
-   ReSpec biedt structuur en presentatiemogelijkheden voor technische specificaties.
-   Zoals informatiemodellen, uitwisselingsstandaarden en API-documentatie.
-
-   ReSpec gebruikt [GfM](https://github.github.com/gfm/) als Markdown-specificatie.
-   Lees ter referentie de [CROW-ReSpec-wiki] en de algemene [ReSpec-handleiding].
-
-6. **Werken met Git en GitHub**
-
-   Er zijn talloze handleidingen voor Git en GitHub.
-
-   De webinterface van VS Code (druk op GitHub.com op <kbd>.</kbd>) of
-   Visual Studio Code geïnstalleerd op je computer.
-   Voor VS Code worden er ook aanbevolen extensies meegegeven in deze repository.
-
-7. **Bijlagen, zoals afbeeldingen**
-
-   Gebruik SVG-bestanden, bijvoorbeeld bewerkt met [draw.io](https://app.diagrams.net/).
-
-[add-doc]: actions/workflows/add-doc.yaml
-[auto-publish]: actions/workflows/auto-publish.yaml
-[lifecycle]: actions/workflows/lifecycle.yaml
-[publiceer-readme]: https://github.com/stichting-crow/stichting-crow.github.io/blob/main/README.md#publiceren
-[crow-respec-wiki]: https://github.com/stichting-crow/respec/wiki
-[respec-handleiding]: https://respec.org/docs/
+### Data
+Er kan worden ingelogd op een van de accounts voor de gemeenten. Op de pagina van de gemeente kunnen eerdere bestanden worden gedownload. Ook kan er worden gekozen om een nieuw bestand te uploaden. Dit bestand komt in onze Azure omgeving terecht. Via een data factory pipeline wordt dit bestand in onze databricks omgeving verwerkt. Met het getrainde model voegen we een voorspelling toe en wordt het nieuwe bestand onderaan beschikbaar om te downloaden.
